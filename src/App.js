@@ -88,8 +88,26 @@ class App extends React.Component {
         <div>
           {/* <button style={{display: 'flex', justifyContent: 'center'}} class="ui mini green button">Make Your Own Pizza!</button><br></br><br></br> */}
         </div>
+
+        <div class="ui inverted two item menu">
+    <a class="item">
         <PizzaForm pizzaX={this.state.pizzaX} handleChange={this.handleChange} handleSubmit={this.handleSubmit} topping={this.state.topping} size={this.state.size}/>
+    </a>
+    <a class="item">
         <CreateForm addNewPizza={this.addNewPizza}/>
+    <div class="floating ui teal label">Free Delivery!</div>
+    </a>
+</div>
+
+
+        
+        
+
+
+
+
+
+
         <PizzaList pizzas={this.state.pizzas} editPizza={this.handleEditClick}/> 
         {/* <div className="footer-copyright text-center py-3" onClick={()=>{window.open('http://chayagreisman.com/','_blank')}}>
           Copyright © {new Date().toISOString().substring(0, 4)} | Chaya M. Greisman
